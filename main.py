@@ -1,4 +1,6 @@
 import requests
+import csv
+import os
 
 if __name__ == "__main__":
     # boas vindas
@@ -13,20 +15,25 @@ if __name__ == "__main__":
     if(status_code != 200):
         print("Falha de comunicação com a API: \n https://economia.awesomeapi.com.br")
 
-    if(status_code == 200):
-        conteudo = response.json()
-        print(f"Data e hora da consulta: {conteudo['USDBRL']['create_date']}")
-        print('++++++++++++++++++++++++++')
-        # Iterando sobre as chaves e exibindo os valores específicos
-        # conteudo['USDBRL']: Acessa o dicionário JSON interno associado à chave 'USDBRL'.
-        # .items(): Retorna uma lista de tuplas contendo os pares (chave, valor) do dicionário.
-        for key, value in conteudo['USDBRL'].items():
-            if key in ['code', 'name', 'high', 'low']:
-                print(f"{key}: {value}")
-        for key, value in conteudo['EURBRL'].items():
-            if key in ['code', 'name', 'high', 'low']:
-                print(f"{key}: {value}")
-        for key, value in conteudo['BTCBRL'].items():
-            if key in ['code', 'name', 'high', 'low']:
-                print(f"{key}: {value}")
-        print('++++++++++++++++++++++++++')
+    # Caso a comunicacao com a API esteja OK!
+    conteudo = response.json()
+
+    # Diretorio arquivo CSV
+    directory = r'C:\python\applications\python-for-bi\csv'
+    file_path = os.path.join(directory, 'cotacao.csv')
+
+    # Criar o diretório se ele não existir
+    os.makedirs(directory, exist_ok=True)
+
+    # Montando arquivo CSV com as Chaves de cada Moeda da API
+    with open(file_path, mode='w', newline='', encoding='utf-8') as file:
+        fieldnames = ['code', 'codein', 'name', 'high', 'low', 'varBid', 'pctChange', 'bid', 'ask', 'timestamp', 'create_date']
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer.writeheader()
+
+        # Iterar sobre a lista de moedas: USD-BRL, EUR-BRL e BTC-BRL
+        for moeda in ['USDBRL', 'EURBRL', 'BTCBRL']:
+            if moeda in conteudo:
+                writer.writerow(conteudo[moeda])
+
+    print(f"Arquivo CSV criado com sucesso em {file_path}")
