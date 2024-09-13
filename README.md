@@ -23,3 +23,11 @@ Exemplo: <code>C:\:DIRETORIO_LOCAL\csv</code>
 ## Vídeo de demonstração
 
 https://www.loom.com/share/e60444bfe55c4bc1aced3678dedd8bc2?sid=f5c63218-2010-4299-aea5-795e4a6869e6
+
+## Processo da aplicação
+
+O usuário ou rotina automática executa a aplicação em python, a aplicação se comunica com API, com o retorno da API positivo a geraçao do arquivo de cotação CSV é executada e o arquivo está pronto para ser utilizado sempre que esse processo não se interrompa.
+
+🕶️
+
+![Pattern](https://github.com/Fillipis/api-cotacao-csv/blob/master/img/pattern.png)
