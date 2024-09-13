@@ -21,3 +21,5 @@ Esta aplicação cria uma conexão externa com a API do Banco Central do Brasil 
 Exemplo: <code>C:\:DIRETORIO_LOCAL\csv</code>
 
 ## Vídeo de demonstração
+
+https://www.loom.com/share/e60444bfe55c4bc1aced3678dedd8bc2?sid=f5c63218-2010-4299-aea5-795e4a6869e6
