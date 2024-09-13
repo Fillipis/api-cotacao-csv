@@ -18,6 +18,6 @@ Esta aplicação cria uma conexão externa com a API do Banco Central do Brasil 
 
 ## Ressalvas: O diretório com arquivo CSV foi criado localmente
 
-Exemplo: <code>C:\python\applications\api-cotacao-csv\csv\</code>
+Exemplo: <code>C:\:DIRETORIO_LOCAL\csv</code>
 
 ## Vídeo de demonstração
