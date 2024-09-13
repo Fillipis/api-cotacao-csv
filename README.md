@@ -6,10 +6,18 @@ Esta aplicação cria uma conexão externa com a API do Banco Central do Brasil 
 
 ### Bibliotecas utilizadas
 
-requests, csv e os
+<code>requests</code>, <code>csv</code> e <code>os</code>
 
 ### Print do código
 
+![O codigo](https://github.com/Fillipis/api-cotacao-csv/blob/master/img/print-codigo.png)
+
 ### Print do resultado do código
+
+![O resultado](https://github.com/Fillipis/api-cotacao-csv/blob/master/img/print-resultado.png)
+
+## Ressalvas: O diretório com arquivo CSV foi criado localmente
+
+Exemplo: <code>C:\python\applications\api-cotacao-csv\csv\</code>
 
 ## Vídeo de demonstração

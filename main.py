@@ -19,7 +19,7 @@ if __name__ == "__main__":
     conteudo = response.json()
 
     # Diretorio arquivo CSV
-    directory = r'C:\python\applications\python-for-bi\csv'
+    directory = r'C:\python\applications\api-cotacao-csv\csv'
     file_path = os.path.join(directory, 'cotacao.csv')
 
     # Criar o diretório se ele não existir
