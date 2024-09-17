@@ -1,0 +1,4 @@
+code,codein,name,high,low,varBid,pctChange,bid,ask,timestamp,create_date
+USD,BRL,Dólar Americano/Real Brasileiro,5.5818,5.4787,-0.0255,-0.46,5.484,5.485,1726605265,2024-09-17 17:34:25
+EUR,BRL,Euro/Real Brasileiro,6.1925,6.0932,-0.0354,-0.58,6.0938,6.1018,1726605263,2024-09-17 17:34:23
+BTC,BRL,Bitcoin/Real Brasileiro,337997,319500,10493,3.27,331165,331197,1726604511,2024-09-17 17:21:51
