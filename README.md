@@ -28,6 +28,10 @@ https://www.loom.com/share/e60444bfe55c4bc1aced3678dedd8bc2?sid=f5c63218-2010-42
 
 O usuário ou rotina automática executa a aplicação em python, a aplicação se comunica com API, com o retorno da API positivo a geraçao do arquivo de cotação CSV é executada e o arquivo está pronto para ser utilizado sempre que esse processo não se interrompa.
 
+## Vídeo de visualização com Power BI
+
+https://www.loom.com/share/4f3fd75abaa449b99f76274bae080572
+
 🕶️
 
 ![Pattern](https://github.com/Fillipis/api-cotacao-csv/blob/master/img/pattern.png)
